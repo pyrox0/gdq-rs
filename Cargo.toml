@@ -1,7 +1,7 @@
 [package]
 name = "gdq-rs"
 authors = ["dish <pyrox@pyrox.dev>"]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 readme = "README.md"
 homepage = "https://github.com/pyrox0/gdq-rs"
@@ -12,4 +12,10 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 derive_builder = "0.20.2"
 facet = { version = "0.25", features = ["reflect"] }
-reqwest = { version = "0.12.15", default-features = false, features = ["http2", "rustls-tls", "charset", "brotli", "zstd"] }
+reqwest = { version = "0.12.15", default-features = false, features = [
+    "http2",
+    "rustls-tls",
+    "charset",
+    "brotli",
+    "zstd",
+] }
